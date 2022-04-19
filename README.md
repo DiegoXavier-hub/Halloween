@@ -1,4 +1,4 @@
-# Karina Nates
+# Welcome to Halloween
 ## Link to view the project
 https://diegoxavier-hub.github.io/Halloween/
 
