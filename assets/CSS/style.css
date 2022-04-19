@@ -67,6 +67,7 @@ header section nav{
     justify-content: space-evenly;
     align-items: center;
     transform: scaleY(0);
+    z-index: 10;
 }
 
 
@@ -75,7 +76,7 @@ header nav a{
     margin-top: 100%;
     margin-bottom: 8vh;
     width: 100%;
-    z-index: 20;
+    z-index: 10;
     text-align: center;
 }
 
@@ -122,6 +123,7 @@ main{
     width: 80vh;
     position: relative;
     left: -13vh;
+    z-index: 5;
 }
 
 .main-text{
@@ -145,8 +147,8 @@ main{
 }
 
 .main-text button{
-    width: 26vh;
-    height: 8vh;
+    width: 180px;
+    height: 50px;
     margin-top: 5vh;
     border: 1px solid #D35A08;
     color: #D35A08;
@@ -222,7 +224,7 @@ main{
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    left: 110%;
+    left: 100%;
 }
 
 .points span{
@@ -423,6 +425,73 @@ main img{
 .points span:nth-child(5){
     animation-delay: 4.6s;
 }
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 1048px){
+    .halloples{
+        display: none;
+    }
+
+    .main-text{
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .main img{
+        width: 340px;
+        position: absolute;
+        bottom: 0;
+        left: -2%;
+    }
+    
+    .stripe-container{
+        animation: none !important;
+    }
+
+    .back-stripe{
+        top: -15vh;
+    }
+
+    .main{
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+    .main-text{
+        position: absolute;
+        top: 10vh;
+        left: 2vh;
+    }
+
+    .main-text p{
+        font-size: 2rem !important;
+    }
+
+    .main-text h1{
+        font-size: 4rem !important;
+    }
+
+    .main button{
+        display: block;
+        margin-bottom: -20px;
+    }
+
+    .points{
+        display: none;
+    }
+}
+
+/*Keyframes*/
 
 @keyframes borderOpacityRight {
     0%{
